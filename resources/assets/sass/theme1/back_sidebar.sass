@@ -1,0 +1,79 @@
+.admin-sidebar
+    padding-right: 60px
+    margin-left: -240px
+    transition: margin-left 0.7s ease
+    position: fixed
+    top: 0
+    left: 0
+    width: 300px
+    height: 60px
+    overflow: scroll
+    background: transparent none
+    z-index: 10
+    
+    .navbar, .navbar-end, .navbar-menu, .navbar-start
+        display: block
+        
+    .navbar-dropdown
+        position: relative
+        background-color: transparent
+        
+    .navbar-brand
+        position: absolute
+        top: 0px
+        left: 100%
+        background-color: $offwhite
+        
+        .navbar-burger
+            display: block
+            
+            span
+                background-color: $blue
+                
+        .navbar-item
+            display: none
+    
+    &:hover
+        margin-left: 0px
+        padding-right: 0px
+        height: 100%
+        background: transparent linear-gradient(141deg,#009e6c 0,#00d1b2 71%,#00e7eb 100%)
+        
+        .navbar-brand
+            position: relative
+            top: auto
+            left: auto
+            
+            .navbar-item
+                display: block
+    
+    .is-hoverable
+    
+        .navbar-dropdown
+            display: none
+            transition: display 0.5s ease
+            
+            
+        &:hover
+            
+            a
+                text-decoration: none
+                font-weight: 600
+                
+    .navbar-menu.is-active
+        box-shadow: none
+        
+        .navbar-item, .navbar-link
+            color: $offwhite
+            text-decoration: none
+            flex: 1
+            flex-wrap: wrap
+            
+            &:hover
+                color: $gray
+                background-color: rgba(0,0,0,0.1)
+                
+    .navbar-item.has-dropdown.is-active .navbar-link, .navbar-item.has-dropdown:hover .navbar-link
+        background: rgba(0,0,0, 0.1) none
+        color: $offwhite
+            

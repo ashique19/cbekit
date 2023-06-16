@@ -1,0 +1,390 @@
+
+.blue-gradient-bg
+    +blue-gradient-bg
+    
+.blackish-bg
+    background-color: rgba(0,0,0,0.6)
+    
+.whitish-bg
+    background-color: rgba(255,255,255,0.6)
+
+/** END : TEXT, BACKGROUND, BORDER COLOR **/
+
+
+/** .BTN, .BADGE **/
+
+.btn, .badge
+    +btn-border-radius()
+    
+.btn-success, .badge-success, .button.is-success
+    background-color: $green
+    
+.btn-info, .badge-info, .button.is-info
+    background-color: $blue
+    
+.btn-warning, .badge-warning, .button.is-warning
+    background-color: $yellow
+    
+.btn-danger, .badge-danger, .button.is-danger
+    background-color: $red
+    
+.button.is-info.is-outlined
+    color: $blue
+    border-color: $blue
+    
+.btn-info.btn-rounded
+    border-color: $blue
+    +btn-border-radius()
+    
+.btn-success.btn-rounded
+    border-color: $green
+    +btn-border-radius()
+    
+.btn-warning.btn-rounded
+    border-color: $yellow
+    +btn-border-radius()
+    
+.btn-danger.btn-rounded
+    border-color: $red
+    +btn-border-radius()
+    
+.btn-default.btn-rounded
+    border-color: $white
+    +btn-border-radius()
+
+/** END : .BTN, .BADGE **/
+
+
+/** General **/
+
+.line-height-140
+    line-height: 140%
+
+body
+    font-family: Arial, 'Open Sans', sans-serif
+
+.fixed
+    position: fixed
+    
+.hover:hover
+    cursor: pointer
+    
+.scroll, .scrollable
+    overflow: scroll
+
+.modal.fade.in.modal-centered 
+    display: flex !important
+    align-items: center
+    justify-content: center
+    
+.hr
+    padding: 0.5px
+    background-color: $offwhite
+
+.modal-open .modal
+    z-index: 1041
+    
+.flex-wrap
+    flex-wrap: wrap
+    
+.xs
+    font-size: 60%
+    
+.flex-align-start
+    -webkit-box-align: start
+    -ms-flex-align: start
+    align-items: flex-start
+    
+.white-border-right
+    border-right: 2px solid $white
+    
+.dotted-border
+    padding: 3px 5px 6px 5px
+    border-bottom: 1px dotted #AAA
+    
+.left-border
+    border-left: 5px solid $gray
+    
+.right-border
+    border-right: 5px solid $gray
+    
+.thin-white-bottom-border
+    border-bottom: 1px solid $white
+
+.expand-collapse
+    position: relative
+    
+    .expand-root
+        position: absolute
+        top: 25px
+        left: 10px
+
+.navbar.exam-nav > .container, .exam-foot .container, .exam-screen > .container
+    max-width: 960px
+    
+.exam-layout2
+
+    .delete
+        border-radius: 0px
+        border: 2px solid $black
+        background-color: transparent
+        
+        &:before, &:after
+            background-color: $black
+
+    &.main-bg
+        background-color: $white
+        background-image: none
+        
+        .hero-body.exam-screen
+            background-color: $white
+
+    .exam-foot 
+        
+        .container
+            max-width: 100%
+            
+        .tabs ul
+            height: 35px
+        
+            a, a:hover
+                text-decoration: none
+                color: $black !important
+                border-bottom-width: 0px
+                display: block
+                position: relative
+                padding-right: 5px
+                padding-left: 20px
+                border-left: 2px solid $white
+                
+                .next-icon
+                    position: absolute
+                    top: 0
+                    right: -15px
+                    width: 20px
+                    height: 100%
+                    background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAeklEQVR42mNgoCMwAOIJQJxALQPvA/F/KJ5PDQPfIxlIFUP90QykiqHxtDDUHof3BSgxVB+LoecJGQpKJguA+AAOfJ9U77/HooEYbEBtA/XxBf56IN6PA2Pz8npKsiFGpAgKCvIPSsPmU9WwQVU4UL340ocmi3iGgQQAXFBsFXa61oUAAAAASUVORK5CYII=) no-repeat center center
+                
+                .prev-icon, .navigation-icon
+                    position: absolute
+                    top: 0
+                    left: 2px
+                    width: 20px
+                    height: 100%
+                    
+                .prev-icon
+                    background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAeElEQVR42mNgGCAQAMQHmJiYGqhhWAIQ/0fCBtQ0DIT1qWlYPLmGTaCmYfMHrWH5WAx7D0ouePAEfAa+x2IgMdgel4H3yTQQZzKyx+HlejzYn1A4xmMxdD6lWY0mhvpjiSSKDdWnl6H21DZUnhplojw0mdgz0BsAAOFtaYFBuL0FAAAAAElFTkSuQmCC) no-repeat center center
+                
+                .navigation-icon
+                    background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAYklEQVR42tWVSwoAIAhEvf+lbduimjcmQYKbpIefySL2lpOfzqTlwknsHVCVhmB2X9R9lZFVTcISac8xMCtAOvWyPgnsSuB2FlWYNRRH6BgYDtCZEpZV+9NrXw7/7cPyFzAAprCnWV5P694AAAAASUVORK5CYII=) no-repeat center center
+                
+                &:hover
+                    color: $red !important
+                
+                    .prev-icon
+                        background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAABWUlEQVR42r2UvUsDQRDFz1YhXC63M3cgYimCINaKpZVYamVhb+M/Y2llaW8TT7yvoIJYGpFgoYIWImK0i2/kDOQykmQDLjzuYJnfzuy8WccZYuVBMBsbsyxfZ9yV+/5SynyaEj1CNwK2hqXGLALW6RFR3QqW+f4qgq8U4MHIsJh5HcG3Cuw1q1S80cpk3oAe+mDM51mtNjc0qOM4EwjaSohaambMCzZlthXYHbSXEW13ZcxOwrzZ8LzpP32G4AsF9g49F5bpClU8Ff8v0Fp/R3EqNr6UexssoiO9EZKNBRDZHvZnCCuIYZWAtpQsjSoLe/fYS8+CYF5vSrU6I91UMmglxuzKoZHrur+6Zp4aPB3wGSC5An2TrtqNHKAANAH6LEGbYi0rqJSD8uOyLwH9QPkrVtCfOzUmUjI9tn6+LsNwEtCTHo8S7Y/1wEpHAWoU01GPwtB3/nN9AxiSLzn8MDkAAAAAAElFTkSuQmCC) no-repeat center center
+
+                    .next-icon
+                        background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAABP0lEQVR42q2UzSuFQRTGnyKRtbpJWbAlS4sb2fkDbKQIK8XWwj+k5C5tlJTFTb4iVpKPxXURuT6u7PhNjbqN8+a+M6aeZjrN+XXOnDNHylhnUtuR1K3/WGWpY18qHUgVVN2TRpOAwObRG7AvJ85XaCIaCGQGwOcP0Kt+KI1HAUmxAPA8ADrdpEZ6aUCfgS7FAvtw3mH/CKCVP6HbUjtt0ss7DQYawfnCgL5iXzZhu1IPFzb8G92Hwv7E/m6kX0MDv4BEMWtUtVmtWn03lwBcz0p5E+gt+50T54eGlB/RSwhz9zN/UVgULg7587D/gnWj0VdytQ0O/URxbMBq2BfXpJamYSdSJ05lKzLs07kiI/UuHE/D3gN0jSZjfshCWHVXpOjhAGCqcXz5Ko+lzsQtNwjcF0PF5KlNG7W6/szr9w3ofRRbQ4+3igAAAABJRU5ErkJggg==) no-repeat center center
+                    
+.block
+    display: block
+
+.exam-foot .tabs ul
+    height: 80px
+    
+    a, a:hover
+        text-decoration: none
+        color: $orange !important
+        border-bottom-width: 0px
+        display: block
+        position: relative
+        
+        
+        
+.exam-screen > .container
+    overflow: hidden
+    
+
+.exam-nav, .exam-foot
+    position: fixed
+    left: 0
+    width: 100%
+    z-index: 1
+    
+.exam-nav
+    top: 0
+    
+.exam-foot
+    bottom: 0
+    
+.exam-progress
+    position: relative
+    
+    progress-indicator
+        position: absolute
+        top: 0
+        left: 0
+        height: 100%
+        width: 0%
+        background: $gray url('/public/img/settings/exam-progress-bar.png') no-repeat center center
+        background-size: cover
+        z-index: 1
+        
+    percentage
+        position: relative
+        z-index: 2
+        
+.click-to-select .button
+    border-radius: 0px
+    border: 4px solid transparent
+    font-size: 1em
+    min-height: 50px
+    font-weight: 400
+    white-space: normal
+    
+    &:hover, &.selected
+        border-color: $orange
+        background-color: $lightGray
+        
+.width-100-percent
+    width: 100%
+    
+.is-centered
+    margin: 0 auto
+    
+.orange-border-bottom
+    border-bottom: 7px solid $orange
+    padding-left: 6px
+    padding-bottom: 6px
+        
+.serial-number
+    height: 40px
+    width: 40px
+    border-radius: 50%
+    background-color: transparent
+    color: $black
+    border: 3px solid $orange
+    display: -webkit-box
+    display: -ms-flexbox
+    display: inline-flex
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
+    -webkit-box-pack: center
+    -ms-flex-pack: center
+    justify-content: center
+    font-weight: 700
+    margin: 5px
+    position: relative
+    
+    &.flag-mark:after
+        background: transparent url('/public/img/settings/flag-mark.png') no-repeat
+        content: " "
+        position: absolute
+        top: -19px
+        left: 9px
+        width: 40px
+        height: 40px
+        background-size: 100%
+        
+    &.answered
+        background-color: $orange
+        color: $white
+        
+.has-text-uppercase
+    text-transform: uppercase
+        
+table.table
+    width: auto
+        
+table.table.is-fullwidth
+    width: 100%
+    
+.slim-gray-bottom-border 
+    border-bottom: 1px solid $lightGray
+    padding-bottom: 10px
+    margin-bottom: 10px
+    
+.has-text-info
+    color: $blue !important
+
+.strike-through
+    text-decoration: line-through
+    
+.white-border-right-5
+    border-right: 5px solid $white
+    
+.white-border-left-5
+    border-left: 5px solid $white
+    
+.hero.is-fullheight .hero-body, .hero.is-halfheight .hero-body
+    align-items: flex-start
+    
+.editor-container.detail-6, .editor-container.detail-5
+    max-width: 50%
+    max-height: calc( 100% - 120px )
+    overflow-y: scroll
+    overflow-x: hidden
+    
+.exam-screen .droppable input
+    font-size: 0px
+    
+.exam-layout2.main-bg
+    padding-left: 10px
+    padding-right: 10px
+    
+.contextmenus
+    
+    li
+        padding: 5px 0
+        
+        a
+            font-size: 12px
+            color: $black
+        
+        &:hover
+            background-color: #f5f5f5
+            border: 1px solid blue
+            cursor: pointer
+            
+span.sp-thumb-el
+    height: 20px
+    width: 20px
+    display: inline-flex
+    align-items: center
+    justify-content: stretch
+    
+span.sp-thumb-inner
+    height: 15px
+    width: 15px
+    display: block
+    margin: 1px
+    position: relative
+    
+    &:hover
+        cursor: pointer
+        border: 1px solid orange
+        
+    &.selected:after
+        position: absolute
+        content: "\f00c"
+        top: 0
+        left: 0
+        height: 100%
+        width: 100%
+        z-index: 1
+        display: inline-block
+        font: normal normal normal 14px/1 FontAwesome
+        
+    
+.color-platter
+    position: relative
+
+.is-rounded
+    border-radius: 50%
+
+
+/** END: General **/
+    
+
